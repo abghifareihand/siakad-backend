@@ -22,10 +22,10 @@
                         </div>
                         <div class="card-wrap">
                             <div class="card-header">
-                                <h4>Total Admin</h4>
+                                <h4>Admin</h4>
                             </div>
                             <div class="card-body">
-                                10
+                                {{ $adminCount }}
                             </div>
                         </div>
                     </div>
@@ -33,14 +33,14 @@
                 <div class="col-lg-3 col-md-6 col-sm-6 col-12">
                     <div class="card card-statistic-1">
                         <div class="card-icon bg-danger">
-                            <i class="far fa-newspaper"></i>
+                            <i class="far fa-user"></i>
                         </div>
                         <div class="card-wrap">
                             <div class="card-header">
-                                <h4>News</h4>
+                                <h4>Dosen</h4>
                             </div>
                             <div class="card-body">
-                                42
+                                {{ $dosenCount }}
                             </div>
                         </div>
                     </div>
@@ -48,14 +48,14 @@
                 <div class="col-lg-3 col-md-6 col-sm-6 col-12">
                     <div class="card card-statistic-1">
                         <div class="card-icon bg-warning">
-                            <i class="far fa-file"></i>
+                            <i class="far fa-user"></i>
                         </div>
                         <div class="card-wrap">
                             <div class="card-header">
-                                <h4>Reports</h4>
+                                <h4>Mahasiswa</h4>
                             </div>
                             <div class="card-body">
-                                1,201
+                                {{ $mahasiswaCount }}
                             </div>
                         </div>
                     </div>
@@ -63,14 +63,14 @@
                 <div class="col-lg-3 col-md-6 col-sm-6 col-12">
                     <div class="card card-statistic-1">
                         <div class="card-icon bg-success">
-                            <i class="fas fa-circle"></i>
+                            <i class="fas fa-users"></i>
                         </div>
                         <div class="card-wrap">
                             <div class="card-header">
-                                <h4>Online Users</h4>
+                                <h4>Total Users</h4>
                             </div>
                             <div class="card-body">
-                                47
+                                {{ $userCount }}
                             </div>
                         </div>
                     </div>
