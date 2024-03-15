@@ -23,6 +23,7 @@ class DatabaseSeeder extends Seeder
             'email_verified_at' => now(),
         ]);
 
-        \App\Models\User::factory(50)->create();
+        \App\Models\User::factory(25)->create();
+        \App\Models\Study::factory(50)->create();
     }
 }
