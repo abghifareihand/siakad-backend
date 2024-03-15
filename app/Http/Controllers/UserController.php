@@ -82,10 +82,4 @@ class UserController extends Controller
         $user->delete();
         return redirect()->route('users.index')->with('success', 'User deleted successfully.');
     }
-
-    public function showUsersCount()
-    {
-        $userCount = User::count();
-        return view('pages.dashboard', ['userCount' => $userCount]);
-    }
 }
