@@ -9,8 +9,13 @@ class Study extends Model
 {
     use HasFactory;
 
-    protected $fillable = [
-        'title',
-        'lecturer_id',
-    ];
+    // protected $fillable = [
+    //     'title',
+    //     'lecturer_id',
+    // ];
+
+    public function lecturer()
+    {
+        return $this->belongsTo(User::class);
+    }
 }

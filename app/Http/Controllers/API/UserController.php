@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\API;
 
 use App\Http\Controllers\Controller;
+use App\Http\Resources\UserResource;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
@@ -56,7 +57,7 @@ class UserController extends Controller
             'message' => 'Login successfully.',
             'data' => [
                 'access_token' => $token,
-                'user' => $user
+                'user' => new UserResource($user)
             ]
         ]);
     }

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\API\ScheduleController;
 use App\Http\Controllers\API\UserController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -22,7 +23,11 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::post('user', [UserController::class, 'update']);
     // logout user
     Route::post('logout', [UserController::class, 'logout']);
+
+    Route::apiResource('schedules', ScheduleController::class);
 });
 
 // login user
 Route::post('login', [UserController::class, 'login']);
+
+
