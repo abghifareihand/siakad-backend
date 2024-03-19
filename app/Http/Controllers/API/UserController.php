@@ -73,7 +73,7 @@ class UserController extends Controller
             'success' => true,
             'message' => 'User data fetched successfully.',
             'data' => [
-                'user' => $user
+                'user' => new UserResource($user)
             ]
         ]);
     }
