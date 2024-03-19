@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('schedules', function (Blueprint $table) {
             $table->id();
             $table->bigInteger('student_id')->unsigned();
-            $table->bigInteger('study_id')->unsigned();
+            $table->bigInteger('subject_id')->unsigned();
             $table->dateTime('schedule_date');
             $table->string('schedule_type');
             $table->timestamps();

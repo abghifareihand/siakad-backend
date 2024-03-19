@@ -10,9 +10,9 @@ class Schedule extends Model
 {
     use HasFactory;
 
-    public function study()
+    public function subject()
     {
-        return $this->belongsTo(Study::class);
+        return $this->belongsTo(Subject::class);
     }
 
     public function student()

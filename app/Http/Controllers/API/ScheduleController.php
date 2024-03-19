@@ -17,7 +17,7 @@ class ScheduleController extends Controller
         $studentId = $user->id; // Mengasumsikan id pengguna adalah student_id
 
         // Mengambil jadwal berdasarkan student_id
-        $schedules = Schedule::with('study', 'student')
+        $schedules = Schedule::with('subject', 'student')
             ->where('student_id', $studentId)
             ->get();
 

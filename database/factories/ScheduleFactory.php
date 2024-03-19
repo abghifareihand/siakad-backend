@@ -17,8 +17,8 @@ class ScheduleFactory extends Factory
     public function definition(): array
     {
         return [
-            'student_id' => 201,
-            'study_id' => 5,
+            'student_id' => 2,
+            'subject_id' => 5,
             'schedule_date' => fake()->dateTime(),
             'schedule_type' => 'online',
         ];
